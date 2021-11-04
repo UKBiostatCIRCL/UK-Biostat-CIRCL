@@ -9,8 +9,8 @@
 #' @param mod_glm This is an object of class 'glm'.
 #' @param dat This is the dataframe used in fitting the glm object.
 #' @keywords Tidy Output
-#' @export glm_output This is a dataframe object with the following columns:
-#' "Coefficient", "Std. Errors", "Odds Ratio", "Z", and "p-value".
+#' @import parameters
+#' @export
 #' @examples
 #' mod_glm = glm(as.factor(readmit_status) ~ `LesionSize (cm)` + Age + Sex + BMI, data = dat_single, family = "binomial")
 #' glm_output = create_glm_output_table(mod_glm, dat_single)

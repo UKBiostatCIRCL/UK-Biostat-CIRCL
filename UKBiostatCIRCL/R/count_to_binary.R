@@ -11,11 +11,7 @@
 #' @param y A numeric vector representing the total number of successes (k).
 #' @param time A numeric vector representing the time points.
 #' @keywords Count to Binary
-#' @export new_dat A dataframe in person-period/long format with columns x, y, and time.
-#' @export x A numeric vector with the total number of events (n) for each time point.
-#' This value will repeat within each time point.
-#' @export y A binary numeric vector representing the outcome of each of n independent trials.
-#' @export time A numeric vector representing the time point within which x events occurred with y successes.
+#' @import dplyr data.table
 #' @examples
 #' new_dat = to_binary(dat, dat$x, dat$y, dat$time)
 
