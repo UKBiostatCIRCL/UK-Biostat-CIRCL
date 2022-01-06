@@ -20,12 +20,12 @@ count_to_binary = function(dat, x, y, time) {
   require(dplyr)
   require(data.table)
   new_dat = list()
-  for (i in 1:max(dat$time)) {
+  for (i in 1:nrow(dat)) {
     new_dat[[i]] =
-      data.frame(x = rep(dat$x[i], dat$x[i]),
-                 time = rep(dat$time[i], dat$x[i]),
-                 y = c(rep(1, dat$y[i]),
-                       rep(0, dat$x[i] - dat$y[i])))
+      data.frame(x = rep(x[i], x[i]),
+                 time = rep(time[i], x[i]),
+                 y = c(rep(1, y[i]),
+                       rep(0, x[i] - y[i])))
   }
   data.table::rbindlist(new_dat)
   new_dat = dplyr::bind_rows(new_dat, .id = "time")
