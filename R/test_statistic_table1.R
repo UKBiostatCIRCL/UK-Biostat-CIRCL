@@ -5,11 +5,16 @@
 #'
 #' This function allows you to add a column calculating the test statistic to the table1 function. The calculation is based on
 #' one-way ANOVA for continuous variables and chi-squared for categorical variables.
+#'
 #' @param x This input is not necessary if used as an added function in the extra.cols argument in table1.
 #' The input will automatically be detected by the function.
+#'
 #' @keywords Test Statistic
+#'
 #' @examples
 #' table1::table1(~ . | group, data = dat, extra.cols = c(`Test Statistic`= statistic_table1))
+#'
+#' @export
 
 
 statistic_table1 <- function(x, ...) {

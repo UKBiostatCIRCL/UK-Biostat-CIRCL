@@ -6,13 +6,20 @@
 #' This function is designed to extract the key information from a GLM object and compile it into a tidy dataframe
 #' for use in R Markdown reports. Information includes coefficient estimates, standard errors, odds ratios,
 #' Z statistics, and p-values.
+#'
 #' @param mod_glm This is an object of class 'glm'.
+#'
 #' @param dat This is the dataframe used in fitting the glm object.
+#'
 #' @keywords Tidy Output
+#'
 #' @import parameters
+#'
 #' @examples
 #' mod_glm = glm(as.factor(readmit_status) ~ `LesionSize (cm)` + Age + Sex + BMI, data = dat_single, family = "binomial")
 #' glm_output = create_glm_output_table(mod_glm, dat_single)
+#'
+#' @export
 
 
 

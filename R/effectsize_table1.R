@@ -4,11 +4,16 @@
 #'
 #' This function allows you to add a column calculating effect sizes to the table1 function. The calculation is based on
 #' eta-squared for continuous variables and Cramer's phi for categorical variables.
+#'
 #' @param x This input is not necessary if used as an added function in the extra.cols argument in table1.
 #' The input will automatically be detected by the function.
+#'
 #' @keywords Effect Size
+#'
 #' @examples
 #' table1::table1(~ . | group, data = dat, extra.cols = c(`Effect Size`= esize))
+#'
+#' @export
 
 
 esize_table1 <- function(x, ...) {

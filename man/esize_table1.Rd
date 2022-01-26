@@ -16,6 +16,7 @@ eta-squared for continuous variables and Cramer's phi for categorical variables.
 }
 \examples{
 table1::table1(~ . | group, data = dat, extra.cols = c(`Effect Size`= esize))
+
 }
 \keyword{Effect}
 \keyword{Size}

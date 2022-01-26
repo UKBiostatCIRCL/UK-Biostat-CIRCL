@@ -16,6 +16,7 @@ a one-way ANOVA for continuous variables and chi-squared for categorical variabl
 }
 \examples{
 table1::table1(~ . | group, data = dat, extra.cols = c(`DF`= df_table1))
+
 }
 \keyword{Degrees}
 \keyword{freedom}

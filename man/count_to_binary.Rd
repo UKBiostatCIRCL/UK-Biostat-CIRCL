@@ -21,7 +21,8 @@ converts these counts to binary form where each row represents an independent ev
 This may be useful in situations of n events, choose k successes.
 }
 \examples{
-new_dat = to_binary(dat, dat$x, dat$y, dat$time)
+new_dat = count_to_binary(dat, dat$x, dat$y, dat$time)
+
 }
 \keyword{Binary}
 \keyword{Count}

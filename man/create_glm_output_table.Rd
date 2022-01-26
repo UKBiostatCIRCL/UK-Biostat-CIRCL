@@ -19,6 +19,7 @@ Z statistics, and p-values.
 \examples{
 mod_glm = glm(as.factor(readmit_status) ~ `LesionSize (cm)` + Age + Sex + BMI, data = dat_single, family = "binomial")
 glm_output = create_glm_output_table(mod_glm, dat_single)
+
 }
 \keyword{Output}
 \keyword{Tidy}

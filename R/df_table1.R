@@ -4,11 +4,16 @@
 #'
 #' This function allows you to add a column calculating degrees of freedom to the table1 function. The calculation is based on
 #' a one-way ANOVA for continuous variables and chi-squared for categorical variables.
+#'
 #' @param x This input is not necessary if used as an added function in the extra.cols argument in table1.
 #' The input will automatically be detected by the function.
+#'
 #' @keywords Degrees of freedom
+#'
 #' @examples
 #' table1::table1(~ . | group, data = dat, extra.cols = c(`DF`= df_table1))
+#'
+#' @export
 
 
 df_table1 <- function(x, ...) {

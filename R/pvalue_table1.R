@@ -5,11 +5,16 @@
 #'
 #' This function allows you to add a column calculating effect sizes to the table1 function. The calculation is based on
 #' one-way ANOVA for continuous variables and chi-squared for categorical variables.
+#'
 #' @param x This input is not necessary if used as an added function in the extra.cols argument in table1.
 #' The input will automatically be detected by the function.
+#'
 #' @keywords P-value; Significance test
+#'
 #' @examples
 #' table1::table1(~ . | group, data = dat, extra.cols = c(`P-Value`= pvalue_table1))
+#'
+#' @export
 
 
 pvalue_table1 <- function(x, ...) {

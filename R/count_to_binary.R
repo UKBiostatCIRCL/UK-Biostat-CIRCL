@@ -6,14 +6,23 @@
 #' This function receives the inputs of a count-based dataframe - typically longitudinal in nature - and
 #' converts these counts to binary form where each row represents an independent event resulting in a 0 or 1 outcome.
 #' This may be useful in situations of n events, choose k successes.
+#'
 #' @param dat A dataframe in person-period/long format.
+#'
 #' @param x A numeric vector representing the total number of events (n).
+#'
 #' @param y A numeric vector representing the total number of successes (k).
+#'
 #' @param time A numeric vector representing the time points.
+#'
 #' @keywords Count to Binary
+#'
 #' @import dplyr data.table
+#'
 #' @examples
-#' new_dat = to_binary(dat, dat$x, dat$y, dat$time)
+#' new_dat = count_to_binary(dat, dat$x, dat$y, dat$time)
+#'
+#' @export
 
 
 count_to_binary = function(dat, x, y, time) {

@@ -16,6 +16,7 @@ one-way ANOVA for continuous variables and chi-squared for categorical variables
 }
 \examples{
 table1::table1(~ . | group, data = dat, extra.cols = c(`P-Value`= pvalue_table1))
+
 }
 \keyword{P-value;}
 \keyword{Significance}
