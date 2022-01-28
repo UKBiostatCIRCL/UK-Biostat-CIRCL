@@ -2,6 +2,7 @@
 
 export(count_to_binary)
 export(create_glm_output_table)
+export(create_lm_output_table)
 export(df_table1)
 export(esize_table1)
 export(pvalue_table1)
