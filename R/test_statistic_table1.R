@@ -12,7 +12,9 @@
 #' @keywords Test Statistic
 #'
 #' @examples
-#' table1::table1(~ . | group, data = dat, extra.cols = c(`Test Statistic`= statistic_table1))
+#' data("sleep")
+#'
+#' table1::table1(~ extra | group, data = sleep, extra.cols = c(`Test Statistic`= statistic_table1))
 #'
 #' @export
 

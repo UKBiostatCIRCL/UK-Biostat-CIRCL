@@ -20,13 +20,19 @@
 #' @import dplyr data.table
 #'
 #' @examples
+#' dat = data.frame(x = rpois(100, 10),
+#' y = rpois(100, 1),
+#' time = seq(1:100))
+#'
 #' new_dat = count_to_binary(dat, dat$x, dat$y, dat$time)
 #'
 #' @export
 
 
 count_to_binary = function(dat, x, y, time) {
+
   new_dat = list()
+
   for (i in 1:nrow(dat)) {
     new_dat[[i]] =
       data.frame(x = rep(x[i], x[i]),

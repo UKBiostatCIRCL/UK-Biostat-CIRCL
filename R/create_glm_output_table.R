@@ -16,8 +16,19 @@
 #' @import parameters
 #'
 #' @examples
-#' mod_glm = glm(as.factor(readmit_status) ~ `LesionSize (cm)` + Age + Sex + BMI, data = dat_single, family = "binomial")
-#' glm_output = create_glm_output_table(mod_glm, dat_single)
+#' x = rnorm(100, 0, 1)
+#'
+#' xb = 3 + 4.2 * x
+#'
+#' p = 1/(1 + exp(-xb))
+#'
+#' y = rbinom(n = 100, size = 1, prob = p)
+#'
+#' dat = data.frame(x, y)
+#'
+#' mod_glm = glm(y ~ x, data = dat, family = "binomial")
+#'
+#' glm_output = create_glm_output_table(mod_glm, dat)
 #'
 #' @export
 

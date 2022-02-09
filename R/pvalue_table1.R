@@ -12,7 +12,9 @@
 #' @keywords P-value; Significance test
 #'
 #' @examples
-#' table1::table1(~ . | group, data = dat, extra.cols = c(`P-Value`= pvalue_table1))
+#' data("sleep")
+#'
+#' table1::table1(~ extra | group, data = sleep, extra.cols = c(`P-Value`= pvalue_table1))
 #'
 #' @export
 

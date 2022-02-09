@@ -11,7 +11,9 @@
 #' @keywords Effect Size
 #'
 #' @examples
-#' table1::table1(~ . | group, data = dat, extra.cols = c(`Effect Size`= esize))
+#' data("sleep")
+#'
+#' table1::table1(~ extra | group, data = sleep, extra.cols = c(`Effect Size`= esize_table1))
 #'
 #' @export
 
