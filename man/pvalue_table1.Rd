@@ -15,7 +15,9 @@ This function allows you to add a column calculating effect sizes to the table1 
 one-way ANOVA for continuous variables and chi-squared for categorical variables.
 }
 \examples{
-table1::table1(~ . | group, data = dat, extra.cols = c(`P-Value`= pvalue_table1))
+data("sleep")
+
+table1::table1(~ extra | group, data = sleep, extra.cols = c(`P-Value`= pvalue_table1))
 
 }
 \keyword{P-value;}

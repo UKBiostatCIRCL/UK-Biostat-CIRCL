@@ -15,7 +15,9 @@ This function allows you to add a column calculating degrees of freedom to the t
 a one-way ANOVA for continuous variables and chi-squared for categorical variables.
 }
 \examples{
-table1::table1(~ . | group, data = dat, extra.cols = c(`DF`= df_table1))
+data("sleep")
+
+table1::table1(~ extra | group, data = sleep, extra.cols = c(`DF`= df_table1))
 
 }
 \keyword{Degrees}

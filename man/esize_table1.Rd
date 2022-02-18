@@ -15,7 +15,9 @@ This function allows you to add a column calculating effect sizes to the table1 
 eta-squared for continuous variables and Cramer's phi for categorical variables.
 }
 \examples{
-table1::table1(~ . | group, data = dat, extra.cols = c(`Effect Size`= esize))
+data("sleep")
+
+table1::table1(~ extra | group, data = sleep, extra.cols = c(`Effect Size`= esize_table1))
 
 }
 \keyword{Effect}

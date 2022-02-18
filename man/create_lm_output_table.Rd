@@ -19,7 +19,11 @@ for use in R Markdown reports. Information includes coefficient estimates, stand
 Z statistics, and p-values.
 }
 \examples{
+dat = data.frame(x = rnorm(100, 0, 1),
+y = 1.2 * x)
+
 mod_lm = lm(y ~ x, data = dat)
+
 lm_output = create_lm_output_table(mod_lm, dat)
 
 }

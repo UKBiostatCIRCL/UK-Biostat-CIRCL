@@ -21,6 +21,10 @@ converts these counts to binary form where each row represents an independent ev
 This may be useful in situations of n events, choose k successes.
 }
 \examples{
+dat = data.frame(x = rpois(100, 10),
+y = rpois(100, 1),
+time = seq(1:100))
+
 new_dat = count_to_binary(dat, dat$x, dat$y, dat$time)
 
 }
