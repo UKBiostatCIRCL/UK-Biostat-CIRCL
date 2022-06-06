@@ -24,6 +24,8 @@ more typically used adjusted weighted standardized residual 1 or the weighted st
 Currently, this function only works for models fitted using the `betareg` function in `R`.
 }
 \examples{
+
+require(betareg)
 data("GasolineYield", package = "betareg")
 
 gy = betareg(yield ~ batch + temp | temp, data = GasolineYield)

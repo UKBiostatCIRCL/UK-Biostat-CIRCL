@@ -1,7 +1,7 @@
 Package: UKBiostatCIRCL
 Type: Package
 Title: UKBiostatCIRCL: A package for the common functions of the Biostat CIRCL at the University of Kentucky
-Version: 0.1.0
+Version: 0.1.1
 Author: UK Biostat CIRCL
 Maintainer: UK Biostat CIRCL <BiostatCIRCL@l.uky.edu>
 Description: The UKBiostatCIRCL package contains numerous key functions that improve the workflow of CIRCL members.
@@ -9,4 +9,4 @@ License: `use_gpl3_license()`
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
-Imports: data.table, dplyr, parameters, betareg
+Imports: data.table, dplyr, parameters, betareg, tableone, stringr, testit, janitor, plyr, here, Hmisc

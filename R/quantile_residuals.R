@@ -27,6 +27,8 @@
 #' @import betareg
 #'
 #' @examples
+#'
+#' require(betareg)
 #' data("GasolineYield", package = "betareg")
 #'
 #' gy = betareg(yield ~ batch + temp | temp, data = GasolineYield)

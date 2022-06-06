@@ -12,8 +12,10 @@
 #' @import parameters
 #'
 #' @examples
-#' dat = data.frame(x = rnorm(100, 0, 1),
-#' y = 1.2 * x)
+#' x = rnorm(100, 0, 1)
+#' y = 1.2 * x
+#'
+#' dat = data.frame(x, y)
 #'
 #' mod_lm = lm(y ~ x, data = dat)
 #'
