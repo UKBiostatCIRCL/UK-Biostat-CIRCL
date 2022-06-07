@@ -1,0 +1,26 @@
+UKBiostatCIRCL R Package Version Notes
+
+0.1.0 - Initial creation of R package with the following functions:
+
+count_to_binary
+create_glm_output_table
+create_lm_output_table
+df_table1
+effectsize_table1
+pvalue_table1
+quantile_residuals
+test_statistic_table1
+
+
+0.1.1 - Updates as of June 7, 2022
+
+Revisions to functions:
+
+count_to_binary
+
+Addition of the following functions from Adam Dugan's personal GitHub repository:
+
+combine_overall_and_stratified_tables
+nsqip_clean_data
+nsqip_subset_pufs
+redcap_process_data
