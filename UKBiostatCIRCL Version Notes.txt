@@ -24,3 +24,10 @@ combine_overall_and_stratified_tables
 nsqip_clean_data
 nsqip_subset_pufs
 redcap_process_data
+
+
+0.1.2 - Updates as of June 23, 2022
+
+Revisions to functions:
+
+nsqip_clean_data
