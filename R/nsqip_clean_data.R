@@ -84,7 +84,7 @@ nsqip_clean_data <- function(dataset = dat){
   vars <- c("ventilat","hxcopd","ascites","hxchf","hypermed","renafail","dialysis","discancr","wndinf","steroid","wtloss","bleeddis","transfus","prsepis",
            "smoke","caseid","inout","emergncy","fnstatus2","wndclas","orgspcssi","supinfec","dehis","oupneumo","othbleed","urninfec","reintub","failwean",
             "othsysep","othseshock","renainsf","pulembol","cnscva")
-  for(i in 1:length(vars)){
+  for(i in vars){
     dataset[, i] <- factor(x = dataset[, i])
   }
   rm(i, vars)
